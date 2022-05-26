@@ -9,11 +9,13 @@ class Navbar extends Component {
     handleClick = () => {
         this.setState({clicked: !this.state.clicked})
     }
-
+    
     render() {
         return(
+        <header>
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">StreetMe  <i class="fa-solid fa-hat-cowboy"></i></h1>
+                <h1 className="navbar-logo">StreetMe  <i class="fa-solid fa-hat-cowboy"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i></h1>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
@@ -28,8 +30,9 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
-                <Button>Registrarme</Button>
+                <Button>Registrarme</Button>             
             </nav>
+        </header>
         )
     }
 }

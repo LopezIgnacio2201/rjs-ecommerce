@@ -4,3 +4,20 @@
     font-family: 'Montserrat', sans-serif;
     padding: 0;
 }
+
+.nosotros-container {
+    
+}
+.nosotros {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.nosotros-texto {
+    margin-left: 180px;
+}
+
+.nosotros-texto2 {
+    padding-top: 50px;
+    margin-right: 50px;
+    text-align: right;
+}
