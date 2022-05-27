@@ -9,12 +9,6 @@ import {ItemListContainer} from './components/ItemListContainer/ItemListContaine
 
 function App() {
   
-  const usuario = {
-    nombre: 'usuario',
-    rol: 'usuario'
-  }
-
-  
   return (
     <div className="App">
       
@@ -22,7 +16,9 @@ function App() {
       
       <Nosotros/>
 
-      <ItemListContainer nombre={usuario.nombre}/>
+     
+
+      <ItemListContainer/>
 
     </div>
   );

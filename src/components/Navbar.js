@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import {MenuItems} from "./MenuItems"
 import './Navbar.css'
 import {Button} from "./Button"
+import CartWidget from "./CartWidget/CartWidget"
+import "./CartWidget/CartWidget.css"
 
 class Navbar extends Component {
     state = {clicked: false}
@@ -13,12 +15,13 @@ class Navbar extends Component {
     render() {
         return(
         <header>
+            
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">StreetMe  <i class="fa-solid fa-hat-cowboy"></i>
-                <i class="fa-solid fa-cart-arrow-down"></i></h1>
+                <h1 className="navbar-logo">StreetMe  <i class="fa-solid fa-hat-cowboy"></i></h1>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
+                <CartWidget/> 
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
@@ -30,7 +33,8 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
-                <Button>Registrarme</Button>             
+                <Button>Registrarme</Button>  
+                          
             </nav>
         </header>
         )
