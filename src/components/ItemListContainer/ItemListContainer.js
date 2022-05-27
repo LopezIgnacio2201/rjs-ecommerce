@@ -3,6 +3,7 @@ import './ItemListContainer.css'
 import { Spinner } from "react-bootstrap"
 import { pedirDatos } from '../mock/pedirDatos'
 import ItemList from '../ItemList/ItemList'
+import Counter from '../Counter/Counter'
 
 
 
@@ -38,7 +39,7 @@ export const ItemListContainer = () => {
                 :  <ItemList items={items}/>
             }
           
-           
+           <Counter></Counter>
         </section>
     )
 }
