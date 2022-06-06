@@ -4,6 +4,8 @@ import './Navbar.css'
 import {Button} from "./Button"
 import CartWidget from "./CartWidget/CartWidget"
 import "./CartWidget/CartWidget.css"
+import { Link } from 'react-router-dom'
+
 
 class Navbar extends Component {
     state = {clicked: false}
@@ -17,7 +19,7 @@ class Navbar extends Component {
         <header>
             
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">StreetMe  <i class="fa-solid fa-hat-cowboy"></i></h1>
+            <Link to={"/"}> <h1 className="navbar-logo">StreetMe   <i class="fa-solid fa-hat-cowboy"></i></h1></Link>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>

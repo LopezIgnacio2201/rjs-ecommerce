@@ -39,7 +39,6 @@ export const ItemListContainer = () => {
                 :  <ItemList items={items}/>
             }
           
-           <Counter></Counter>
         </section>
     )
 }

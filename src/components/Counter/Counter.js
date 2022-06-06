@@ -18,7 +18,7 @@ const Counter = () => {
 
     const decrementar = () => {
         setContador( {
-            contador: contador.contador - 1,
+            contador : contador.contador - 1,
             fyh: new Date()
         } )
     }
