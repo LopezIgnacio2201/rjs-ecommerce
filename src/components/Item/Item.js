@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 const Item = ({item}) => {
 
     return (
@@ -8,7 +9,9 @@ const Item = ({item}) => {
             <p>{item.desc}</p>
             <h4>Precio: ${item.precio}</h4>
             <hr/>
-
+            <Link to={`/item/${item.id}`}>
+                <button className="btn btn-primary my-2">Ver más</button>
+            </Link>
             
         </div>
     ) 

@@ -5,6 +5,6 @@ export  const pedirDatos = () => {
 
          setTimeout(()=> {
              resolve(productos)
-         }, 2000)
+         }, 500)
     })
 }

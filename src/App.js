@@ -6,7 +6,6 @@ import {Nosotros} from './components/Nosotros'
 import {ItemListContainer} from './components/ItemListContainer/ItemListContainer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import Navbar2 from './components/Navbar2/Navbar2';
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
 import Footer from './components/Footer/Footer';
 
@@ -29,7 +28,7 @@ function App() {
       </Routes>
       
       
-      
+      <Footer/>
     </BrowserRouter>
   );
 }

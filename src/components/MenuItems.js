@@ -1,3 +1,4 @@
+import Contacto from "./contacto/contacto"
 export const MenuItems = [
     {
         title: 'Productos',
@@ -16,7 +17,8 @@ export const MenuItems = [
     },
     {
         title: 'Contacto',
-        url: '#',
+        url: Contacto,
+        link: Contacto,
         cName: 'nav-links'
     },
     {

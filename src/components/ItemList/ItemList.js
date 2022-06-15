@@ -1,4 +1,5 @@
 import Item from "../Item/Item"
+import "./ItemList.css"
 
 
 
@@ -7,11 +8,12 @@ const ItemList = ( {items} ) => {
     return (
         <div>
             <h2>Nuestro productos</h2>
-            <hr/>
-
+            
+        <div className="listaDeItems">
             {
                 items.map((item) => <Item key={item.id} item={item}/>)
             }
+        </div>
         </div>
     )
 }

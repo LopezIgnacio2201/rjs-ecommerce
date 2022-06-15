@@ -1,0 +1,7 @@
+.listaDeItems {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 17px;
+    width: 1500px;
+}

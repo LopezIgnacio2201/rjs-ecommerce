@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import ItemCounter from "../ItemCounter/ItemCounter";
 
 const ItemDetail = ({item}) => {
 
@@ -15,7 +16,13 @@ const ItemDetail = ({item}) => {
             <p>{item.desc}</p>
             <h4>Precio: ${item.precio}</h4>
 
-            <button onClick={handleVolver}>VOLVER</button>
+            <hr/>
+            <ItemCounter
+            stock={item.stock}
+            item={item}
+            />
+            
+            <button className="btn btn-primary" onClick={handleVolver}>VOLVER</button>
         </div>
     )
 }
