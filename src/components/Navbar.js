@@ -5,7 +5,7 @@ import {Button} from "./Button"
 import CartWidget from "./CartWidget/CartWidget"
 import "./CartWidget/CartWidget.css"
 import { Link } from 'react-router-dom'
-import { Dropdown } from 'react-bootstrap'
+
 
 
 class Navbar extends Component {
@@ -19,14 +19,14 @@ class Navbar extends Component {
         return(
         <header>
             
-
             <nav className="NavbarItems">
-            <Link to={"/"}> <h1 className="navbar-logo">StreetMe   <i class="fa-solid fa-hat-cowboy"></i></h1></Link>
+            <Link className="navbar-logo" to={"/"}> <h1 className="navbar-logo">StreetMe </h1> </Link> <i class="fa-brands fa-redhat navbar-logo-logo"></i>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-                <CartWidget/> 
-                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                
+                <div className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                
                     {MenuItems.map((item, index) => {
                         return (
 
@@ -34,11 +34,16 @@ class Navbar extends Component {
                                 <Link className={item.cName} to={item.url} >
                                 {item.title}
                                 </Link>
+                                 
                             </li>
+                             
                         )
                     })}
-                </ul>
-                <Button>Registrarme</Button>  
+                    
+                </div>    
+                
+                <Button>Registrarme</Button>
+                <CartWidget/>
                           
             </nav>
         </header>

@@ -3,11 +3,12 @@ import './ItemListContainer.css'
 import { Spinner } from "react-bootstrap"
 import { pedirDatos } from '../mock/pedirDatos'
 import ItemList from '../ItemList/ItemList'
-import Counter from '../Counter/Counter'
 
 
 
 export const ItemListContainer = () => {
+
+    
 
     const [items, setItems] = useState([])
     const [loading, setLoading] = useState(true)

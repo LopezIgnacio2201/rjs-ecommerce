@@ -12,7 +12,7 @@ const productos = [
         id: 2,
         nombre: "Producto 2",
         desc: "Una descripcion",
-        precio: 1200,
+        precio: 1400,
         categoria: "pantalones",
         img: 'https://via.placeholder.com/221',
         stock: 0

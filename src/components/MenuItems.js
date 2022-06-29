@@ -1,29 +1,31 @@
-import Contacto from "./contacto/contacto"
 export const MenuItems = [
     {
         title: 'Productos',
-        url: '#',
+        url: '/#',
         cName: 'nav-links'
     },
     {
         title: 'Precios y envios',
-        url: '#',
+        url: '/Precios',
+        link: '/Precios',
         cName: 'nav-links'
     },
     {
         title: 'Catalogo Limitado',
-        url: '#',
+        url: '/Catalogo',
+        link: '/Catalogo',
         cName: 'nav-links'
     },
     {
         title: 'Contacto',
-        url: Contacto,
-        link: Contacto,
+        url: '/Contacto',
+        link: '/Contacto', 
         cName: 'nav-links'
     },
     {
         title: 'Registrarme',
-        url: '#',
+        url: '/Registro',
+        link: '/Registro',
         cName: 'nav-links-mobile'
     },
 ]

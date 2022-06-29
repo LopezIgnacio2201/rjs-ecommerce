@@ -1,10 +1,10 @@
 :root {
-    --primary: #3acbf7;
+    --primary: rgba(255, 219, 243, 1);
 }
 
 .btn {
     padding: 8px 20px;
-    margin-top: -10px;
+    margin-top: -0px;
     border-radius: 4px;
     outline: none;
     border: none;
@@ -14,8 +14,6 @@
 .btn:hover {
     padding: 8px 20px;
     transition: all 0.3s ease-out;
-    background: #fff;
-    color: #6568f4;
     transition: 250ms;
 }
 
@@ -35,9 +33,11 @@
 
 .btn--medium {
     padding: 8px 20px;
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 18px;
-    color: #fff;
+    color: black;
+    border: 2px solid rgba(255, 189, 234, 1);
+    
 }
 
 .btn-large {

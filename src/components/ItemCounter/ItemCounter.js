@@ -1,10 +1,5 @@
-import { useState } from "react"
-import Item from "../Item/Item"
-
-const ItemCounter = ( {stock,item} ) => {
+const ItemCounter = ( {stock, setCounter, counter, handleAgregar} ) => {
    
-    const [counter, setCounter] = useState(0)
-
     const handleSumar = () => {
         
         counter < stock && setCounter(counter + 1)
@@ -15,20 +10,7 @@ const ItemCounter = ( {stock,item} ) => {
         counter > 1 && setCounter(counter - 1)
     }
 
-    const handleAgregar = () => {
-        console.log(item)
-
-        const ItemToCart = {
-            item,
-            cantidad:counter
-        }
-        
-        stock > 1 && console.log("Item agregado con exito")
-        stock < 1 && console.log("Item no se ha podido agregar")
-
-        console.log(ItemToCart)
-        
-    }
+    
 
     return (
         <div className="my-5">

@@ -1,5 +1,5 @@
 .NavbarItems {
-    background: linear-gradient(90deg, rgb(110,94,254) 0%, rgba(73,63,252,1) 100%);
+    background: rgba(255, 150, 204, 1);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -8,9 +8,23 @@
 }
 
 .navbar-logo {
-    color: #fff;
+    color: black;
     justify-self: start;
     margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.navbar-logo-logo {
+    font-size: 40px;
+    color: black;
+    margin-left: 15px;
+}
+
+.navbar-logo:hover .navbar-logo:visited .navbar-logo:link .navbar-logo:active .navbar-logo:focus  {
+    color: black;
+    text-decoration: none !important;
     cursor: pointer;
 }
 
@@ -31,15 +45,17 @@
 }
 
 .nav-links {
-    color:#fff;
+    color:black;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
 .nav-links:hover {
-    background-color: #6d76f7;
+    background-color: rgba(255, 184, 201, 1);
+    color: black;
     border-radius: 4px;
     transition: all 0.2s ease-out;
+    text-decoration: none;
 }
 
 .fa-bars {
@@ -69,14 +85,16 @@
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
+        text-decoration: none;
     }
 
     .nav-menu.active {
-        background: #6668f4;
+        background: black;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
+        text-decoration: none;
     }
 
     .nav-links {
@@ -84,11 +102,13 @@
         padding: 2rem;
         width: 100%;
         display: table;
+        text-decoration: none;
     }
 
     .nav-links:hover {
-        background-color: #7577fa;
+        background-color: black;
         border-radius: 0;
+        text-decoration: none;
     }
 
     .navbar-logo {
@@ -96,6 +116,7 @@
         top: 0;
         left: 0;
         transform: translate(25%,50%);
+        text-decoration: none;
     }
 
     .menu-icon {
@@ -129,7 +150,7 @@
 
     .nav-links-mobile:hover {
         background: #fff;
-        color: #6568f4;
+        color: black;
         transition: 250ms;
     }
 
@@ -138,3 +159,11 @@
     }
 }
 
+.widget {
+    color: black;
+    font-size: 45px;
+    margin: 60px;
+}
+.widget:hover {
+    color: black;
+}
